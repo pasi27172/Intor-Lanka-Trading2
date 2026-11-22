@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Intor Lanka Trading – Vehicle Spare Parts & Bearings</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap">
+<style>
+:root{--sky:#38BDF8;--sky2:#0EA5E9;--navy:#0C4A6E;--deep:#06293f;--bg:#F1F5F9;--card:#fff;--ink:#0C4A6E;--mute:#475569;--line:#dbe4ec;--amb:#F59E0B;--ease:cubic-bezier(.22,1,.36,1);--hd:"Rajdhani","Trebuchet MS",system-ui,sans-serif;--bd:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1a29;--card:#0f2740;--ink:#e0f2fe;--mute:#9fb4c7;--line:#1f3d58}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--bd);overflow-x:hidden}
+h1,h2,h3{font-family:var(--hd);line-height:1.05;margin:0}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--amb);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .5s var(--ease),box-shadow .5s}
+nav.s{background:rgba(6,41,63,.82);backdrop-filter:blur(14px);box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.nb{display:flex;align-items:center;gap:20px;height:68px}
+.logo{font:700 24px var(--hd);color:#fff;text-decoration:none;letter-spacing:.02em;display:flex;gap:8px;align-items:center}
+.logo b{color:var(--sky)}
+.nl{display:none;gap:26px;margin-left:auto}
+.nl a{color:#d6ecf9;text-decoration:none;font-weight:500;font-size:15px;position:relative}
+.nl a::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:100%;background:var(--sky);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.nl a:hover::after{transform:scaleX(1)}
+@media(min-width:820px){.nl{display:flex}}
+#cartBtn{margin-left:auto;position:relative;background:var(--sky2);color:#fff;border:0;border-radius:999px;padding:9px 18px;font-weight:600;transition:transform .3s var(--ease),background .3s}
+@media(min-width:820px){#cartBtn{margin-left:0}}
+#cartBtn:hover{transform:translateY(-2px);background:var(--sky)}
+#cnt{background:var(--amb);color:#111;border-radius:99px;padding:0 7px;margin-left:6px;font-size:13px}
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;background:radial-gradient(1200px 600px at 75% 40%,#0b6a9c 0,transparent 60%),linear-gradient(160deg,#06293f,#0C4A6E 55%,#075985);color:#fff;overflow:hidden;padding:110px 0 70px}
+.road{position:absolute;left:0;right:0;bottom:0;height:90px;background:repeating-linear-gradient(90deg,var(--sky) 0 60px,transparent 60px 140px) center 44px/280px 4px repeat-x;opacity:.45;animation:road 2.4s linear infinite}
+@keyframes road{to{background-position-x:-280px}}
+.hg{display:grid;gap:30px;align-items:center;position:relative;z-index:2}
+@media(min-width:900px){.hg{grid-template-columns:1.1fr .9fr}}
+.hero h1{font-size:clamp(46px,8vw,92px);font-weight:700;letter-spacing:-.01em}
+.hero h1 span{display:block;overflow:hidden}
+.hero h1 span i{display:block;font-style:normal;transform:translateY(105%);animation:up 1.1s var(--ease) forwards}
+.hero h1 span:nth-child(2) i{animation-delay:.18s;color:var(--sky)}
+.hero h1 span:nth-child(3) i{animation-delay:.36s}
+@keyframes up{to{transform:none}}
+.hero p{max-width:46ch;color:#cfe8f7;font-size:18px;opacity:0;animation:fade 1s .8s var(--ease) forwards}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;opacity:0;animation:fade 1s 1s var(--ease) forwards}
+@keyframes fade{to{opacity:1}}
+.btn{display:inline-block;border:0;border-radius:10px;padding:14px 26px;font-weight:600;text-decoration:none;transition:transform .35s var(--ease),box-shadow .35s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(14,165,233,.4)}
+.b1{background:var(--sky2);color:#fff}
+.b2{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.45)}
+.bear{width:min(86vw,460px);margin:auto;filter:drop-shadow(0 30px 50px rgba(0,0,0,.45));transform:translate3d(0,var(--py,0),0) rotate(var(--rot,0deg));will-change:transform}
+.bear .ring{transform-origin:200px 200px;animation:spin 26s linear infinite}
+.bear .cage{transform-origin:200px 200px;animation:spin 14s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.speed{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px;position:relative;z-index:2}
+.speed div{border-left:3px solid var(--sky);padding-left:14px}
+.speed b{display:block;font:700 clamp(28px,5vw,44px) var(--hd)}
+.speed span{color:#b6d9ee;font-size:14px}
+/* sections */
+section.sec{padding:90px 0}
+.sec h2{font-size:clamp(34px,5vw,54px);margin-bottom:10px}
+.sec .lead{color:var(--mute);max-width:56ch;margin:0 0 36px}
+.rv{opacity:0;transform:translateY(40px) scale(.98);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.cats{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 14px;text-align:center;cursor:pointer;transition:transform .5s var(--ease),border-color .3s,box-shadow .5s}
+.cat:hover,.cat.on{transform:translateY(-8px);border-color:var(--sky);box-shadow:0 20px 40px rgba(14,165,233,.18)}
+.cat.on{background:var(--navy);color:#fff}
+.cat svg{width:46px;height:46px;transition:transform 1s var(--ease)}
+.cat:hover svg{transform:rotate(300deg)}
+.cat span{display:block;font:600 17px var(--hd);margin-top:8px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.tools input{flex:1 1 220px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:12px 14px;font:inherit}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:9px 18px;font-weight:600;transition:all .3s}
+.chip.on,.chip:hover{background:var(--sky2);border-color:var(--sky2);color:#fff}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.pc{background:var(--card);border-radius:16px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .6s var(--ease),box-shadow .6s}
+.pc:hover{transform:translateY(-10px);box-shadow:0 28px 50px rgba(12,74,110,.22)}
+.pi{aspect-ratio:4/3;display:grid;place-items:center;position:relative;overflow:hidden}
+.pi svg{width:46%;transition:transform 1.2s var(--ease)}
+.pc:hover .pi svg{transform:scale(1.18) rotate(30deg)}
+.tag{position:absolute;top:10px;left:10px;background:#fff;color:var(--navy);font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px}
+.st{position:absolute;top:10px;right:10px;background:var(--amb);color:#111;font-size:12px;font-weight:700;border-radius:6px;padding:2px 8px}
+.pb{padding:16px;display:flex;flex-direction:column;gap:4px;flex:1}
+.pn{font:600 12px var(--hd);letter-spacing:.08em;color:var(--sky2)}
+.pb h3{font-size:22px}
+.pm{color:var(--mute);font-size:13px}
+.pf{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:12px}
+.pr{font:700 20px var(--hd)}
+.add{background:var(--navy);color:#fff;border:0;border-radius:9px;padding:9px 14px;font-weight:600;transition:background .3s,transform .3s var(--ease)}
+.add:hover{background:var(--sky2);transform:scale(1.06)}
+.empty{grid-column:1/-1;padding:40px;text-align:center;color:var(--mute)}
+/* brands */
+.brands{background:var(--navy);color:#fff;padding:30px 0;overflow:hidden}
+.mq{display:flex;gap:70px;width:max-content;animation:mq 22s linear infinite}
+.mq b{font:700 44px var(--hd);letter-spacing:.1em;opacity:.8}
+@keyframes mq{to{transform:translateX(-50%)}}
+.why{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.why h3{font-size:24px;margin-bottom:6px}
+.why p{margin:0;color:var(--mute)}
+.contact{background:linear-gradient(160deg,#06293f,#0C4A6E);color:#fff;padding:80px 0}
+.contact a.btn{margin:6px 8px 0 0}
+.wa{background:#22c55e;color:#06210f}
+footer{background:var(--deep);color:#9fc4dc;padding:26px 0;font-size:14px}
+#wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:#22c55e;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.35);animation:pulse 2.5s infinite;text-decoration:none;font-size:26px}
+@keyframes pulse{50%{box-shadow:0 0 0 14px rgba(34,197,94,0)}}
+/* drawer + modal */
+.ov{position:fixed;inset:0;background:rgba(3,20,32,.6);backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:opacity .5s;z-index:60}
+.ov.on{opacity:1;pointer-events:auto}
+#dr{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);background:var(--card);z-index:70;transform:translateX(105%);transition:transform .7s var(--ease);display:flex;flex-direction:column;padding:calc(20px + env(safe-area-inset-top,0px)) 20px calc(20px + env(safe-area-inset-bottom,0px))}
+#dr.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center}
+.dh h2{font-size:32px}
+.x{background:none;border:0;color:var(--ink);font-size:28px}
+#items{flex:1;overflow:auto;margin:14px 0}
+.it{display:grid;grid-template-columns:1fr auto;gap:4px 10px;padding:12px 0;border-bottom:1px solid var(--line);animation:fade .5s forwards;opacity:0}
+.it b{font-family:var(--hd);font-size:18px}
+.q{display:flex;gap:8px;align-items:center}
+.q button{width:28px;height:28px;border-radius:7px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.sum div{display:flex;justify-content:space-between;padding:3px 0;color:var(--mute)}
+.sum .t{color:var(--ink);font:700 24px var(--hd);padding-top:8px}
+#md{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:16px;pointer-events:none;opacity:0;transition:opacity .5s}
+#md.on{opacity:1;pointer-events:auto}
+.mb{background:var(--card);border-radius:18px;padding:26px;width:min(560px,100%);max-height:92vh;overflow:auto;transform:translateY(30px) scale(.96);transition:transform .6s var(--ease)}
+#md.on .mb{transform:none}
+.mb h2{font-size:34px;margin-bottom:12px}
+.mb form{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.mb input,.mb select{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:9px;padding:11px;font:inherit}
+.mb .full{grid-column:1/-1}
+.mb fieldset{grid-column:1/-1;border:1px solid var(--line);border-radius:10px;padding:10px 14px;display:grid;gap:6px}
+.mb label{display:flex;gap:8px;align-items:center}
+.ok{text-align:center;padding:20px 0}
+.ok b{font:700 36px var(--hd);color:var(--sky2);display:block}
+@media(max-width:520px){.mb form{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}.hero h1 span i{transform:none}.hero p,.cta{opacity:1}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="wrap nb">
+<a class="logo" href="#top" aria-label="Intor Lanka Trading"><svg width="30" height="30" viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" fill="none" stroke="#38BDF8" stroke-width="4"/><circle cx="20" cy="20" r="6" fill="#fff"/></svg>INTOR <b>LANKA</b></a>
+<div class="nl"><a href="#cats">Categories</a><a href="#shop">Shop</a><a href="#why">Why us</a><a href="#contact">Contact</a></div>
+<button id="cartBtn" aria-label="Open cart">Cart<span id="cnt">0</span></button>
+</div></nav>
+
+<header class="hero" id="top">
+<div class="road"></div>
+<div class="wrap">
+<div class="hg">
+<div>
+<h1><span><i>Every part.</i></span><span><i>Every bearing.</i></span><span><i>Sri Lanka moving.</i></span></h1>
+<p>Spare parts and precision bearings from NSK, Koyo, NTN and trusted brands, for garages, bulk buyers and vehicle owners across the island.</p>
+<div class="cta"><a class="btn b1" href="#shop">Shop spare parts</a><a class="btn b2" href="#contact">Call or WhatsApp us</a></div>
+</div>
+<svg class="bear" id="bear" viewBox="0 0 400 400" role="img" aria-label="Spinning bearing illustration">
+<defs><radialGradient id="g1"><stop offset="0" stop-color="#e8f7ff"/><stop offset="1" stop-color="#7dd3fc"/></radialGradient><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bae6fd"/><stop offset="1" stop-color="#0369a1"/></linearGradient></defs>
+<g class="ring"><circle cx="200" cy="200" r="185" fill="url(#g2)"/><circle cx="200" cy="200" r="160" fill="#06293f"/></g>
+<g class="cage" id="balls"></g>
+<circle cx="200" cy="200" r="86" fill="url(#g2)"/>
+<circle cx="200" cy="200" r="62" fill="#06293f"/><circle cx="200" cy="200" r="34" fill="url(#g1)"/>
+</svg>
+</div>
+<div class="speed"><div><b data-n="40">0</b><span>brands and quality grades</span></div><div><b data-n="1200">0</b><span>parts on the shelf</span></div><div><b data-n="25">0</b><span>districts delivered to</span></div></div>
+</div>
+</header>
+
+<section class="sec" id="cats"><div class="wrap">
+<h2 class="rv">Find your part by system</h2><p class="lead rv">Bearings sit inside Vehicle Spare Parts, together with every other category your workshop needs.</p>
+<div class="cats" id="catGrid"></div>
+</div></section>
+
+<section class="sec" id="shop" style="padding-top:20px"><div class="wrap">
+<h2 class="rv">Popular parts</h2><p class="lead rv">Prices are placeholders until the shop owner sets live prices.</p>
+<div class="tools rv"><input id="q" type="search" placeholder="Search by name or part number" aria-label="Search products"><span id="brandChips" style="display:flex;gap:8px;flex-wrap:wrap"></span></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<div class="brands" aria-label="Brands"><div class="mq" id="mq"></div></div>
+
+<section class="sec" id="why"><div class="wrap">
+<h2 class="rv">Why garages choose us</h2><p class="lead rv">Clear part numbers, honest quality labels and fast dispatch.</p>
+<div class="why">
+<div class="rv"><h3>Original and TK grades</h3><p>Each product states its quality type, so you know what you are fitting.</p></div>
+<div class="rv" style="--d:.1s"><h3>Bulk pricing</h3><p>Garages and fleets can request quotes on wheel bearings, filters and belts.</p></div>
+<div class="rv" style="--d:.2s"><h3>Islandwide delivery</h3><p>Courier to your door or pick up at Panchikawatta, Colombo 01.</p></div>
+<div class="rv" style="--d:.3s"><h3>Pay your way</h3><p>Cash on delivery, card or bank transfer with a slip upload.</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2 style="font-size:clamp(34px,5vw,54px)" class="rv">Can’t find a part? Ask us.</h2>
+<p class="rv" style="color:#cfe8f7;max-width:52ch">156 Panchikawatta Road, Colombo 01000, Sri Lanka</p>
+<div class="rv"><a class="btn b1" href="tel:+94112470490">Call 0112 470 490</a><a class="btn wa" href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener">WhatsApp us</a></div>
+</div></section>
+<footer><div class="wrap">© 2026 Intor Lanka Trading. Demo storefront with placeholder products and prices.</div></footer>
+<a id="wa" href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<div class="ov" id="ov"></div>
+<aside id="dr" aria-label="Cart"><div class="dh"><h2>Your cart</h2><button class="x" id="cx" aria-label="Close cart">×</button></div>
+<div id="items"></div>
+<div class="sum"><div><span>Subtotal</span><span id="sub">0</span></div><div><span>Delivery</span><span id="del">0</span></div><div class="t"><span>Total</span><span id="tot">0</span></div></div>
+<button class="btn b1" id="pay" style="width:100%;margin-top:14px">Proceed to pay</button></aside>
+
+<div id="md"><div class="mb" role="dialog" aria-modal="true" aria-label="Checkout">
+<div id="co"><h2>Checkout</h2>
+<form id="f">
+<input class="full" required placeholder="Full name"><input required placeholder="Phone"><input type="email" required placeholder="Email">
+<input class="full" required placeholder="Street address"><input required placeholder="City"><input required placeholder="District"><input class="full" placeholder="Postal code">
+<select class="full"><option>Courier delivery</option><option>Store pickup, Panchikawatta</option></select>
+<fieldset><legend>Payment</legend><label><input type="radio" name="p" checked>Cash on delivery</label><label><input type="radio" name="p">Card (PayHere or Stripe, sandbox)</label><label><input type="radio" name="p">Bank transfer (upload slip after ordering)</label></fieldset>
+<button class="btn b1 full" type="submit">Place order</button><button class="btn full" type="button" id="mc" style="background:var(--bg);color:var(--ink)">Back</button>
+</form></div>
+<div class="ok" id="ok" hidden><h2>Order placed</h2><b id="ref"></b><p>Your reference number. A real order here would also save to the database and deduct stock.</p><button class="btn b1" id="done">Continue shopping</button></div>
+</div></div>
+
+<script>
+const $=s=>document.querySelector(s),LKR=n=>"LKR "+Math.round(n).toLocaleString("en-US");
+const CATS=["Wiper Blades","Brake System","Radiator Parts","Belts","Filters","Engine Parts","Suspension","Electrical","Clutch Parts","Bearings","Other Parts"];
+const P=[
+["TK Wiper Blade 24in","TK","Wiper Blades","WB-24","TK",1850,40],
+["TK Brake Pad Set, Front","TK","Brake System","BP-1120","TK",6900,22],
+["Genuine Brake Pad Set","Original","Brake System","BP-OEM","Original",14500,9],
+["TK Radiator Cap","TK","Radiator Parts","RC-13","TK",950,60],
+["TK Fan Belt 6PK","TK","Belts","FB-6PK","TK",2400,31],
+["Oil Filter, Original","Original","Filters","OF-9001","Original",2300,48],
+["TK Oil Filter","TK","Filters","OF-T12","TK",1150,80],
+["TK Spark Plug Set","TK","Electrical","SP-4","TK",3200,26],
+["NSK Wheel Bearing","NSK","Bearings","6203DDU","Original",4800,35],
+["Koyo Tapered Roller Bearing","Koyo","Bearings","32008JR","Original",5600,18],
+["NTN Deep Groove Ball Bearing","NTN","Bearings","6305LLU","Original",2900,52],
+["NSK Alternator Bearing","NSK","Bearings","6303DDU","Original",2200,0]
+];
+const COL={NSK:"#0369a1",Koyo:"#0891b2",NTN:"#1d4ed8",TK:"#0ea5e9",Original:"#0C4A6E"};
+const icon=c=>`<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="none" stroke="${c}" stroke-width="3"/><circle cx="20" cy="20" r="5" fill="${c}"/>${[0,60,120,180,240,300].map(a=>`<circle cx="${20+10*Math.cos(a*Math.PI/180)}" cy="${20+10*Math.sin(a*Math.PI/180)}" r="2.2" fill="${c}"/>`).join("")}</svg>`;
+let cat="",brand="",cart={},last=0;
+const cg=$("#catGrid");
+CATS.forEach((c,i)=>{const d=document.createElement("div");d.className="cat rv";d.style.setProperty("--d",i*.05+"s");d.tabIndex=0;d.innerHTML=icon("#0EA5E9")+"<span>"+c+"</span>";d.onclick=()=>{cat=cat===c?"":c;document.querySelectorAll(".cat").forEach(x=>x.classList.toggle("on",x===d&&cat));render();$("#shop").scrollIntoView()};d.onkeydown=e=>e.key==="Enter"&&d.click();cg.appendChild(d)});
+const bc=$("#brandChips");["All","NSK","Koyo","NTN","TK","Original"].forEach(b=>{const e=document.createElement("button");e.className="chip"+(b==="All"?" on":"");e.textContent=b;e.onclick=()=>{brand=b==="All"?"":b;bc.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===e));render()};bc.appendChild(e)});
+$("#mq").innerHTML=[..."NSK KOYO NTN TK ORIGINAL ".repeat(4).split(" ").filter(Boolean)].map(b=>"<b>"+b+"</b>").join("");
+function render(){
+ const q=$("#q").value.toLowerCase(),g=$("#grid");
+ const L=P.map((p,i)=>({p,i})).filter(({p})=>(!cat||p[2].startsWith(cat.split(" ")[0]))&&(!brand||p[1]===brand||p[4]===brand)&&(p[0]+p[3]).toLowerCase().includes(q));
+ g.innerHTML=L.length?L.map(({p,i},k)=>`<article class="pc rv in" style="--d:${k*.04}s"><div class="pi" style="background:linear-gradient(145deg,${COL[p[1]]}22,${COL[p[1]]}55)">${icon(COL[p[1]])}<span class="tag">${p[1]}</span>${p[6]?(p[6]<20?'<span class="st">Low stock</span>':""):'<span class="st">Out of stock</span>'}</div><div class="pb"><span class="pn">${p[3]}</span><h3>${p[0]}</h3><span class="pm">${p[2]} · ${p[4]} quality</span><div class="pf"><span class="pr">${LKR(p[5])}</span><button class="add" data-i="${i}" ${p[6]?"":"disabled"}>Add</button></div></div></article>`).join(""):'<div class="empty">No parts match. Try another brand or call us on 0112 470 490.</div>';
+}
+function drawCart(){
+ const ids=Object.keys(cart),sub=ids.reduce((s,i)=>s+P[i][5]*cart[i],0),del=ids.length?(sub>25000?0:600):0;
+ $("#cnt").textContent=ids.reduce((s,i)=>s+cart[i],0);
+ $("#items").innerHTML=ids.length?ids.map(i=>`<div class="it"><b>${P[i][0]}</b><span>${LKR(P[i][5]*cart[i])}</span><div class="q"><button data-m="${i}" aria-label="Less">−</button>${cart[i]}<button data-p="${i}" aria-label="More">+</button><button data-r="${i}" style="width:auto;padding:0 8px">Remove</button></div></div>`).join(""):'<p class="empty">Your cart is empty. Add a part to begin.</p>';
+ $("#sub").textContent=LKR(sub);$("#del").textContent=del?LKR(del):"Free";$("#tot").textContent=LKR(sub+del);
+ $("#pay").disabled=!ids.length;
+}
+function fly(btn){
+ const a=btn.getBoundingClientRect(),b=$("#cartBtn").getBoundingClientRect(),d=document.createElement("div");
+ d.style.cssText=`position:fixed;z-index:99;left:${a.left}px;top:${a.top}px;width:22px;height:22px;border-radius:50%;background:#F59E0B;pointer-events:none`;
+ document.body.appendChild(d);
+ d.animate([{transform:"translate(0,0) scale(1)",opacity:1},{transform:`translate(${b.left-a.left}px,${b.top-a.top}px) scale(.3)`,opacity:.3}],{duration:800,easing:"cubic-bezier(.5,-.2,.6,1)"}).onfinish=()=>{d.remove();$("#cartBtn").animate([{transform:"scale(1.18)"},{transform:"none"}],300)};
+}
+$("#grid").onclick=e=>{const b=e.target.closest(".add");if(!b)return;const i=b.dataset.i;cart[i]=(cart[i]||0)+1;fly(b);drawCart()};
+$("#items").onclick=e=>{const t=e.target.dataset;if(t.p)cart[t.p]++;if(t.m&&--cart[t.m]<1)delete cart[t.m];if(t.r)delete cart[t.r];drawCart()};
+const open=v=>{$("#dr").classList.toggle("on",v);$("#ov").classList.toggle("on",v)};
+$("#cartBtn").onclick=()=>open(true);$("#cx").onclick=$("#ov").onclick=()=>{open(false);$("#md").classList.remove("on")};
+$("#pay").onclick=()=>{open(false);$("#ov").classList.add("on");$("#co").hidden=false;$("#ok").hidden=true;$("#md").classList.add("on")};
+$("#mc").onclick=()=>{$("#md").classList.remove("on");$("#ov").classList.remove("on")};
+$("#f").onsubmit=e=>{e.preventDefault();last++;$("#ref").textContent="ILT-2026-"+String(last).padStart(4,"0");$("#co").hidden=true;$("#ok").hidden=false;cart={};drawCart()};
+$("#done").onclick=$("#mc").onclick;
+$("#q").oninput=render;
+// bearing balls
+$("#balls").innerHTML=Array.from({length:10},(_,i)=>{const a=i*36*Math.PI/180;return `<circle cx="${200+123*Math.cos(a)}" cy="${200+123*Math.sin(a)}" r="22" fill="url(#g1)"/>`}).join("");
+// reveal, counters, parallax
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&(e.target.classList.add("in"),io.unobserve(e.target))),{threshold:.15});
+const watch=()=>document.querySelectorAll(".rv:not(.in)").forEach(x=>io.observe(x));
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;cio.unobserve(e.target);const n=+e.target.dataset.n,t0=performance.now();(function s(t){const k=Math.min(1,(t-t0)/1800);e.target.textContent=Math.round(n*(1-Math.pow(1-k,4))).toLocaleString()+(k===1?"+":"");k<1&&requestAnimationFrame(s)})(t0)}));
+document.querySelectorAll("[data-n]").forEach(x=>cio.observe(x));
+const rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+addEventListener("scroll",()=>{const y=scrollY;$("#nav").classList.toggle("s",y>40);if(!rm&&y<innerHeight*1.2){$("#bear").style.setProperty("--py",y*.18+"px");$("#bear").style.setProperty("--rot",y*.05+"deg")}},{passive:true});
+render();drawCart();watch();
+</script>
+</body>
+</html>
